@@ -1,0 +1,773 @@
+* {
+    margin: auto;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+    margin: 3rem 0 3rem 1rem;
+    color: #30150a !important;
+    padding: 0px !important;
+}
+
+.info {
+    display: flex;
+}
+
+.banner {
+    /* background-color:rgb(236 216 196); */
+    /* background: linear-gradient(to right, rgb(0 0 0 / 88%), rgb(255 255 255 / 0%)), url(images/coffee.jpg); */
+    background-image: url('images/wave6.svg');
+    width: 100%;
+    height: 43rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.logo {
+    background-image: url('images/logo.png');
+    width: 8rem;
+    height: 8rem;
+    background-size: contain;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: white;
+    height: 125px;
+}
+
+.navigation {
+    display: flex;
+    width: 920px;
+}
+
+.navigation ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 2rem;
+}
+
+a {
+    color: rgb(99 83 73);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: rgb(48 21 10);
+}
+
+.info {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.heading {
+    color: #5a4338;;
+    font-family: 'Sacramento', cursive;
+    padding: 8% 0 0 10%;
+
+}
+.backHead {
+    background-image: url(images/beans.png);
+    width: 29.3%;
+    background-size: contain;
+    left: 35%;
+    top: 35%;
+    z-index: -1;
+    position: absolute;
+    height: 350px;
+}
+.backHeadExplore {
+    background-image: url(images/beans.png);
+    width: 29.3%;
+    background-size: contain;
+    left: 35%;
+    top: 11%;
+    z-index: -1;
+    position: absolute;
+    height: 350px;
+}
+h1 {
+    font-size: 5rem;
+}
+
+.card {
+    width: 37rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.cartIcon {
+    background-image: url(images/cart.png);
+    width: 26px;
+    height: 26px;
+    margin-bottom: 5px;
+    background-size: cover;
+
+}
+
+.accIcon {
+    background-image: url(images/acc.png);
+    width: 26px;
+    height: 26px;
+    margin-bottom: 5px;
+    background-size: cover;
+}
+
+input {
+    width: 25rem;
+    border: none;
+    height: 2rem;
+    outline: none;
+    border-bottom: 1px solid #4e4949;
+    transition: 0.5s ease;
+}
+input[type=submit] {
+    border: none;
+}
+
+label {
+    width: 25.4rem;
+    font-size: 1.2rem;
+}
+
+select {
+    width: 25rem;
+    height: 2rem;
+}
+.enter {
+    display: flex;
+    width: 110px;
+    font-family: 'Poppins';
+}
+
+.check {
+    margin: 4rem 0 0 0;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    border: none;
+    background: #c49c88;
+    border-radius: 8px;
+}
+
+.illustration {
+    background-image: url('images/dipCoffee.gif');
+    width: 500px;
+    background-size: contain;
+    z-index: -1;
+    right: 9rem;
+    position: absolute;
+    height: 500px;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; 
+font-family: 'Sacramento', cursive;
+*/
+
+.newLaunches {
+    width: 100%;
+}
+
+.headingNewLaunches {
+    padding: 4rem;
+    position: relative;
+    text-align: center;
+}
+
+.headingNewLaunches > h2 {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2f160b;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    height: 520px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.listNewLaunches {
+    display: flex;
+    justify-content: space-around;
+    height: 850px;
+}
+
+.david-img {
+    background-image: url('images/removeDavid.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    z-index: 5;
+}
+
+
+.nescafe-img {
+    background-image: url('images/nscafe.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: top ease 0.5s;
+    background-position-y: center;
+    height: 250px;
+    width: 300px;
+    position: relative;
+    z-index: 5;
+}
+
+.rage-img {
+    background-image: url('images/removeRage.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: top ease 0.5s;
+    background-position-y: center;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    z-index: 5;
+}
+
+.smallCard {
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    position: relative;
+    transition: 0.5s;
+    bottom: 130px;
+    padding: 1rem;
+    border-radius: 8px;
+    background: white;
+    height: 370px;
+}
+
+.smallCard p {
+    padding-top: 9rem;
+    color: #62534a;
+    font-weight: 100;
+}
+
+.smallCard:hover {
+    box-shadow: rgb(86 79 79 / 53%) 0px 9px 28px 2px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+/* transition: top ease 0.5s;
+top: -50px;
+position: relative; */
+
+
+.strip {
+    width: 500px;
+    height: 1086px;
+    position: absolute;
+    left: 33.4%;
+    text-align: center;
+    z-index: -99;
+    background-color: #f9e4d0;
+}
+
+.explore1 {
+    background-color:#f9e4d0;
+    width: 100%;
+    position: relative;
+    z-index: -99;
+    height: 800px;
+    margin-top: 24px;
+    padding-top: 5rem;
+}
+
+.explore1 h2, .explore2 h2 {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #2f160b;
+}
+
+.explore1Box {
+    display: flex;
+    padding: 0 1rem 0 6rem;
+}
+
+.explore2Box {
+    display: flex;
+}
+
+.cardHead {
+    display: none;
+}
+
+.exploreContent {
+    width: 50%;
+}
+
+.exploreContent p {
+    line-height: 2;
+    font-size: larger;
+    font-weight: 300;
+    color: #62534a;
+    padding-top: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.exploreContent button{
+    background-color: #e3c3a9;
+    color: white;
+}
+
+/* 
+.exploreImage {
+    width: 50%;
+} */
+
+.exploreMug {
+    width: 450px;
+    background-size: cover;
+
+    height: 650px;
+    background-image: url(images/buyMug.png);
+}
+
+.explore2 {
+    background-color: white;
+    width: 100%;
+    height: 800px;
+    margin-top: 24px;
+    padding-top: 5rem;
+}
+
+.exploreBlender {
+    width: 510px;
+    margin-top: 2rem;
+
+    background-size: cover;
+    height: 570px;
+    background-image: url(images/machine-removebg-preview.png);
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #a08167;
+    color: white;
+    display: flex;
+    padding: 5rem;
+}
+
+.leftFooter {
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.rightFooter {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 300px;
+}
+
+.leftFooter div {
+    width: 200px;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.icons {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+}
+
+.leftFooter img{
+    width: 40px;
+}
+
+.footerList li{
+    margin-bottom: 2rem;
+}
+
+/* Log In */
+
+.loginPage {
+    width: 75%;
+    display: flex;
+    box-shadow: rgb(99 99 99 / 20%) 0px 8px 13px 10px;
+    height: 650px;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.logInForm {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+
+}
+
+.addWid {
+    height: 3.5rem;
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    height: 450px !important;
+
+}
+
+.logInForm h2 {
+    margin-left: 24.7rem;
+    font-size: 4rem;
+    line-height: 1.225;
+}
+
+.logInForm .inputBoxes{
+    font-size: 1.4rem;
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    height: 3.5rem; 
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+}
+
+.logInForm .logInSubmit {
+    background: #d2a477;
+    color: white;
+    width: 22rem !important;
+    height: 4rem;
+    margin-right: 4rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+.loginContainer {
+    width: 100%;
+    margin-top: 6rem;
+    height: 37rem;
+}
+
+.goInLine {
+    display: inline;
+
+}
+
+.goInLine input {
+    width: 301px !important;
+
+}
+
+.firstBox {
+    margin-right: 2rem;
+}
+
+.goInLine a{
+    font-size: 20px;
+}
+
+.coffeeMug {
+    background-image: url(images/mugCoffee.png);
+    width: 10rem;
+    height: 10rem;
+    top: 32rem;
+    background-size: contain;
+    left: -52px;
+    position: absolute;
+    transform: rotate(37deg);
+}
+
+.cupCoffee {
+    background-image: url(images/cupCoffee.png);
+    width: 10rem;
+    height: 10rem;
+    top: 32rem;
+    background-size: contain;
+    right: -52px;
+    position: absolute;
+    transform: rotate(310deg);
+}
+
+.canCoffee {
+    background-image: url(images/canCoffee.png);
+    width: 10rem;
+    height: 10rem;
+    top: 12rem;
+    background-size: contain;
+    left: -52px;
+    position: absolute;
+    transform: rotate(37deg);
+}
+
+.mugCoffee {
+    background-image: url(images/packCoffee.png);
+    width: 10rem;
+    height: 10rem;
+    top: 12rem;
+    background-size: contain;
+    right: -52px;
+    position: absolute;
+    transform: rotate(310deg);
+}
+
+.leftLog {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightLog {
+    width: 60%;
+    overflow: hidden;
+}
+
+.logImage {
+    background-image: url('images/imgLogin.jpeg');
+    width: 725px;
+    height: 650px;
+    background-size: cover;
+    transition: 1s linear;
+    filter: grayscale(0.5);
+
+}
+
+.logImage:hover {
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.userInput {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.userEmail, .userPassword {
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    height: -4rem;
+    height: 2.5rem;
+    box-shadow: rgb(99 99 99 / 20%) 0px 3px 10px 2px;
+}
+
+.getAdded {
+    width: 380px;
+    height: 150px;
+    display: flex;
+}
+
+.submitLogIn, .submitSignIn {
+    width: 150px;
+    background: #7c5a39c2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: -4rem;
+    height: 2.5rem;
+    box-shadow: rgb(99 99 99 / 20%) 0px 3px 10px 2px;
+}
+
+/* Contact Banner */
+
+.contactBanner {
+    background-image: url(/images/moveBin.jpg);
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.contactForm {
+    width: 100%;
+    height: 500px;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.userContact {
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    height: -4rem;
+    height: 2.5rem;
+    box-shadow: rgb(99 99 99 / 20%) 0px 3px 10px 2px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 2550px;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.item {
+    width: 350px;
+    text-align: center;
+    height: 400px;
+    
+    box-shadow: rgb(99 99 99 / 20%) 0px 3px 10px 2px;
+}
+
+.item__position {
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+
+#getEmail {
+    border-radius: 5px;
+}
+
+.viewMore {
+    height: 2.5rem;
+    background: #e3c3a9;
+    width: 10rem;
+    border: none;
+
+    border-radius: 5px;
+    margin: 3rem 0 0 3rem;
+}
+.viewMore a {
+    color: white;
+}
+
+/* Cart Page */
+
+.cartPage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 10rem;
+    flex-direction: row;
+}
+
+.cartList {
+    width: 60%;
+    height: auto;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    border-radius: 5px;
+
+}
+
+.cartList > h2 {
+    margin: 3rem;
+}
+
+.productList {
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: row;
+}
+
+.productImage {
+    width: 20%;
+    height: 11rem;
+    background-image: url(images/david.jpg);
+    background-size: contain;
+}
+
+.nameOfProduct {
+    width: 50%;
+    height: 10rem;
+}
+.nameOfProduct p {
+    margin-bottom: 1rem;
+}
+
+.nameOfProduct span {
+    color: #7a706d;
+    font-weight: 100;
+}
+
+.Pname {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.priceProduct {
+    width: 20%;
+    height: 10rem;
+}
+.removeProduct {
+    width: 10%;
+    height: 10rem;
+}
+.bill {
+    width: 30%;
+    height: 500px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bill div{
+    display: flex;
+    width: 100%;
+    margin-left: 23%;
+    align-items: flex-start;
+}
+
+.bill div p {
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    color: #625349;
+}
+
+.pay button {
+    width: 45%;
+    margin-left: 30px;
+    border: none;
+    height: 2rem;
+    background: #e1c5b2;
+    border-radius: 5px;
+    color: white;
+}
+
+.card > input {
+    margin-top: 2rem;
+}
